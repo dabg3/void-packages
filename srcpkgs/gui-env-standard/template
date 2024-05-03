@@ -1,7 +1,7 @@
 # Template file for 'gui-env-standard'
 pkgname=gui-env-standard
 version=0.1.0
-revision=1
+revision=2
 archs="*"
 build_style=meta
 homepage="https://github.com/dav98b/void-packages"
@@ -18,7 +18,7 @@ depends="
 depends+=" mesa-vulkan-intel intel-video-accel xorg-video-drivers"
 
 # programs
-depends+=" dbus alacritty vim tmux dmenu picom bspwm sxhkd wmname feh glxinfo
+depends+=" dbus vim tmux dmenu picom bspwm sxhkd wmname feh glxinfo
  neofetch scrot firefox chromium libreoffice-writer libreoffice-calc"
 
 do_install() {
