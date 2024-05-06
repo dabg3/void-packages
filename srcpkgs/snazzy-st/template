@@ -1,11 +1,10 @@
 # Template file for 'foo'
 pkgname=snazzy-st
-version=0.8.5
+version=0.8.6
 revision=1
 build_style=gnu-makefile
 hostmakedepends="pkg-config git"
 makedepends="libX11-devel libXft-devel harfbuzz-devel libXext-devel libXrender-devel libXinerama-devel gd-devel"
-depends="nerd-fonts-ttf"
 short_desc="st snazzy terminal (suckless + beautiful)"
 maintainer="Davide Bigotti <dabg@tutanota.com>"
 license="MIT"
