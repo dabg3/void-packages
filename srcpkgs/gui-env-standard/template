@@ -1,6 +1,6 @@
 # Template file for 'gui-env-standard'
 pkgname=gui-env-standard
-version=0.1.0
+version=0.2.0
 revision=2
 archs="*"
 build_style=meta
@@ -19,7 +19,8 @@ depends+=" mesa-vulkan-intel intel-video-accel xorg-video-drivers"
 
 # programs
 depends+=" dbus vim tmux dmenu picom bspwm sxhkd wmname feh glxinfo
- neofetch scrot firefox chromium libreoffice-writer libreoffice-calc"
+ neofetch scrot firefox chromium libreoffice-writer libreoffice-calc
+ xrdb redshift dumb_runtime_dir"
 
 do_install() {
     vinstall $FILESDIR/00-keyboard.conf 644 usr/share/X11/xorg.conf.d
