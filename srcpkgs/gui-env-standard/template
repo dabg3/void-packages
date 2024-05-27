@@ -1,10 +1,10 @@
 # Template file for 'gui-env-standard'
 pkgname=gui-env-standard
-version=0.2.0
-revision=2
+version=0.3.0
+revision=1
 archs="*"
 build_style=meta
-homepage="https://github.com/dav98b/void-packages"
+homepage="https://github.com/dabg3/void-packages"
 short_desc="Desktop environment meta-package"
 maintainer="Davide Bigotti <dabg@tutanota.com>"
 license="Public Domain"
@@ -20,8 +20,10 @@ depends+=" mesa-vulkan-intel intel-video-accel xorg-video-drivers"
 # programs
 depends+=" dbus vim tmux dmenu picom bspwm sxhkd wmname feh glxinfo
  neofetch scrot firefox chromium libreoffice-writer libreoffice-calc
- xrdb redshift dumb_runtime_dir"
+ xrdb redshift dumb_runtime_dir qarma at"
 
 do_install() {
     vinstall $FILESDIR/00-keyboard.conf 644 usr/share/X11/xorg.conf.d
+    vbin $FILESDIR/restart_touchpad.sh
+    vbin $FILESDIR/start_1h_session.sh
 }
